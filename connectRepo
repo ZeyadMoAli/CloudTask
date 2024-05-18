@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/ZeyadMoAli/CloudTask.git'
+            }
+        }
+
+        stage('Execute Batch File') {
+            steps {
+                // Assuming list_directory.bat is the batch file you want to run
+                bat 'list_directory.bat'
+            }
+        }
+    }
+}

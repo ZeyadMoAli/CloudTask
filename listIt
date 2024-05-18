@@ -1,3 +1,0 @@
-@ECHO OFF
-dir
-PAUSE

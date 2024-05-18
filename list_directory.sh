@@ -1,3 +1,2 @@
-@ECHO OFF
-dir
-PAUSE
+#!/bin/sh
+ls -l

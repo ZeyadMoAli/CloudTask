@@ -8,10 +8,10 @@ pipeline {
             }
         }
 
-        stage('Execute Batch File') {
+        stage('Execute Shell Script') {
             steps {
-                // Assuming list_directory.bat is the batch file you want to run
-                bat 'listIt.bat'
+                sh 'chmod +x list_directory.sh' 
+                sh './list_directory.sh'
             }
         }
     }

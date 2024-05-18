@@ -11,7 +11,7 @@ pipeline {
         stage('Execute Batch File') {
             steps {
                 // Assuming list_directory.bat is the batch file you want to run
-                bat 'list_directory.bat'
+                bat 'listIt.bat'
             }
         }
     }
